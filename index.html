@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁 | AI 虛擬陪伴</title>
+    <script type="module" crossorigin src="/2023-layout-bootcamp-week8/assets/main-acf050ef.js"></script>
+    <link rel="stylesheet" href="/2023-layout-bootcamp-week8/assets/main-945e5abb.css">
+  </head>
+  <body>
+    <header>
+  <nav
+    class="navbar navbar-expand-lg text-nowrap border-bottom border-white border-1 py-3 py-lg-4">
+    <div class="container">
+      <h1 class="font-shrikhand text-white mfs-6 mfs-md-8 m-0">
+        <a class="nav-link" href="./index.html">ALPHABOX+</a>
+      </h1>
+      <button
+        class="navbar-toggler p-0 border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#hamburgerMenu">
+        <span class="navbar-menu material-icons"> menu </span>
+      </button>
+      <div
+        class="collapse navbar-collapse navbar-collapse-position w-100 justify-content-center pt-6 pb-8 py-lg-0 z-1"
+        id="hamburgerMenu">
+        <ul class="navbar-nav text-center fw-medium w-100">
+          <li class="nav-item mb-1 mb-lg-0 ms-lg-auto me-lg-10">
+            <a class="nav-link" href="#">產品</a>
+          </li>
+          <li class="nav-item mb-1 mb-lg-0 me-lg-10">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+          <li class="nav-item mb-1 mb-lg-0 me-lg-10">
+            <a class="nav-link" href="#">最新消息</a>
+          </li>
+          <li class="nav-item mb-1 mb-lg-0 me-lg-10">
+            <a href="/pages/faq.html" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item mb-1 mb-lg-0 me-lg-auto">
+            <a href="#" class="nav-link">聯絡我們</a>
+          </li>
+          <li class="nav-item mb-1 mb-lg-0 me-lg-6">
+            <a href="#" class="nav-link">註冊</a>
+          </li>
+          <li class="nav-item mb-1 mb-lg-0 me-lg-8">
+            <a href="#" class="nav-link">登入</a>
+          </li>
+          <li class="nav-item align-self-center">
+            <a
+              href="#"
+              class="nav-link d-flex bg-white text-black px-4 rounded-1"
+              ><span class="material-symbols-outlined me-1"> point_scan </span
+              >訂閱</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <main>
+      <!-- hero section -->
+      <section class="hero bg-hero">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xxl-6 col-xxxl-8">
+              <div
+                class="card bg-transparent text-white border-0 mt-9 mb-8 my-xxxl-0">
+                <h6 class="card-subtitle fw-bold m-0">ALPHABOX+ STUDIO</h6>
+                <div class="text-center my-8 my-xxxl-14">
+                  <img
+                    class="circle"
+                    width="196"
+                    height="196"
+                    src="data:image/png;base64,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"
+                    alt="circle animation" />
+                </div>
+                <h2 class="card-title font-shrikhand m-0">A L P H A B O X +</h2>
+                <p class="card-text text-center fw-bold">
+                  擁抱未來科技，專屬您的3D立體投影陪伴機器人
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-xxxl">
+          <div class="position-relative d-none d-xxl-block">
+            <a class="news text-white fw-bold pb-2" href="#">
+              最新消息！新版本 v15.4 釋出，搶先體驗！</a
+            >
+            <p class="copyright primary-light-1 fw-medium">
+              Copyright © 2023 Hexschool.
+            </p>
+          </div>
+          <ul
+            class="hero-body list-unstyled row align-items-end g-4 g-md-8 mb-0">
+            <li class="hero-list col-md-6 col-xxl-3">
+              <div class="hero-item">
+                <h3
+                  class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
+                  Diane
+                </h3>
+              </div>
+            </li>
+            <li class="hero-list col-md-6 col-xxl-3">
+              <div class="hero-item">
+                <h3
+                  class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
+                  Felix
+                </h3>
+              </div>
+            </li>
+            <li class="hero-list col-md-6 col-xxl-3">
+              <div class="hero-item">
+                <h3
+                  class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
+                  Karina
+                </h3>
+              </div>
+            </li>
+            <li class="hero-list col-md-6 col-xxl-3">
+              <div class="hero-item">
+                <h3
+                  class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
+                  Vito
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- subhero section -->
+      <section class="subhero mt-n26 mt-xxxl-n44">
+        <div class="card bg-transparent border-0">
+          <div class="container container-xxxl">
+            <hr
+              class="divider divider-right opacity-100 border-top-0 mt-34 mt-md-36 mb-md-2" />
+            <div class="card-header p-0 border-bottom-0">
+              <h2
+                class="card-text text-white mfs-6 mfs-md-12 fw-bold ls-24 ls-md-48 mb-md-3">
+                什麼是
+              </h2>
+              <h2
+                class="card-text text-white mfs-6 mfs-md-12 fw-bold ls-24 ls-md-48">
+                ALPHABOX<span>+</span>
+              </h2>
+            </div>
+          </div>
+          <hr
+            class="test border-white opacity-100 position-relative start-50 translate-middle-x mt-5 mt-md-4 mb-md-8" />
+          <div class="container container-xxxl">
+            <div class="row justify-content-between align-items-center">
+              <a href="#" class="d-none d-xxxl-block arrow arrow-start"></a>
+              <div class="col-xxxl-9">
+                <div class="card text-white mb-8 border-0">
+                  <picture>
+                    <source
+                      srcset="/2023-layout-bootcamp-week8/assets/carousel-57c4dcd2.png "
+                      media="(min-width: 768px)" />
+                    <img
+                      src="/2023-layout-bootcamp-week8/assets/carousel_mobile-c1ab36aa.png"
+                      class="card-img"
+                      alt="subhero picture" />
+                  </picture>
+                  <div
+                    class="card-img-overlay d-flex align-items-end align-items-md-center justify-content-md-end pe-md-10 text-md-end">
+                    <ol class="list-unstyled">
+                      <li>
+                        <h3
+                          class="card-title font-shrikhand mfs-16 mfs-md-24 mb-0">
+                          01
+                        </h3>
+                        <h3
+                          class="card-title fw-bold mfs-6 mfs-md-8 ls-24 ls-md-32 mb-md-4">
+                          立體投影技<span>術</span>
+                        </h3>
+                        <p class="card-text fw-bold">
+                          透過高科技立體投影技術，讓您感受真實的科技世界。
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="d-none d-xxxl-block arrow arrow-end"></a>
+            </div>
+            <hr
+              class="divider divider-left opacity-100 border-top-0 mt-0 mb-15 mb-md-13" />
+          </div>
+        </div>
+      </section>
+
+      <!-- news section -->
+      <section
+        class="card bg-radial-gradient-1 fw-bold text-white border-0 pt-15 pt-md-40">
+        <div class="container">
+          <h2
+            class="card-title text-white fw-bold text-center text-md-start mfs-10 mfs-md-12 ls-40 ls-md-48 mb-8 mb-md-10">
+            最新消息
+          </h2>
+          <ul class="card-body list-unstyled row g-0 p-0 mb-10 mb-md-19">
+            <li class="col-12">
+              <!-- card 1 -->
+              <div
+                class="card bg-transparent text-white border-white border-start-0 border-end-0 border-bottom-0 py-8 px-4 py-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="material-symbols-outlined me-4">
+                    emergency
+                  </span>
+                  <time class="ls-16" datetime="2023-06-30">2023.06.30</time>
+                </div>
+                <h3 class="card-title mfs-5 fw-bold ls-20 mb-3">
+                  產品升級公告
+                </h3>
+                <div class="d-md-flex">
+                  <p class="card-text mb-3 me-md-auto">
+                    榮幸地宣布，ALPHABOX+
+                    已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br
+                      class="d-none d-md-block" />
+                    歡迎您了解本次升級帶來的更為卓越的性能！
+                  </p>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwBAMAAABKwk3PAAAAElBMVEVHcEz///////////////////+IGTx/AAAABXRSTlMAHVrZkk/IrqsAAACZSURBVHic7daxDYQwEAXR5Y4CkJBzE7gAkMghoAHg998KtoAGkCYA7RTwkrXXNvM874t1htVGo6q3hqJNOyVbUk/Rf2mG6J+0RcgepR0aZZA0MHSdaWiUVaE1IXYq9H1zBHSNkqCvUb6MRs72OcYIyNVY6AmQySsTsrwisi3YegKXKvgUJGqj5qOHPbvgZyFEowI/Zp7nPe8Ar1GJUz5gSw8AAAAASUVORK5CYII="
+                    alt="arrow to right"
+                    width="196"
+                    height="24" />
+                </div>
+              </div>
+            </li>
+            <li class="col-md-6">
+              <!-- card 2 -->
+              <div
+                class="card bg-transparent text-white border-white border-start-0 border-end-0 py-8 px-4 py-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="material-symbols-outlined me-4">
+                    emergency
+                  </span>
+                  <time class="ls-16" datetime="2023-06-30">2023.06.30</time>
+                </div>
+                <h3 class="card-title mfs-5 fw-bold ls-20 mb-3">
+                  限時優惠活動
+                </h3>
+                <p class="card-text mb-3">
+                  為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱
+                  ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！
+                </p>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwBAMAAABKwk3PAAAAElBMVEVHcEz///////////////////+IGTx/AAAABXRSTlMAHVrZkk/IrqsAAACZSURBVHic7daxDYQwEAXR5Y4CkJBzE7gAkMghoAHg998KtoAGkCYA7RTwkrXXNvM874t1htVGo6q3hqJNOyVbUk/Rf2mG6J+0RcgepR0aZZA0MHSdaWiUVaE1IXYq9H1zBHSNkqCvUb6MRs72OcYIyNVY6AmQySsTsrwisi3YegKXKvgUJGqj5qOHPbvgZyFEowI/Zp7nPe8Ar1GJUz5gSw8AAAAASUVORK5CYII="
+                  alt="arrow to right"
+                  width="90"
+                  height="24" />
+              </div>
+            </li>
+            <li class="col-md-6">
+              <!-- card 3 -->
+              <div
+                class="card bg-transparent text-white border-white border-end-0 border-start-0 border-start-md py-8 px-4 py-md-10">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="material-symbols-outlined me-4">
+                    emergency
+                  </span>
+                  <time class="ls-16" datetime="2023-04-18">2023.04.18</time>
+                </div>
+                <h3 class="card-title mfs-5 fw-bold ls-20 mb-3">新功能上線</h3>
+                <p class="card-text mb-3">
+                  為使您的 ALPHABOX+
+                  更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
+                </p>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwBAMAAABKwk3PAAAAElBMVEVHcEz///////////////////+IGTx/AAAABXRSTlMAHVrZkk/IrqsAAACZSURBVHic7daxDYQwEAXR5Y4CkJBzE7gAkMghoAHg998KtoAGkCYA7RTwkrXXNvM874t1htVGo6q3hqJNOyVbUk/Rf2mG6J+0RcgepR0aZZA0MHSdaWiUVaE1IXYq9H1zBHSNkqCvUb6MRs72OcYIyNVY6AmQySsTsrwisi3YegKXKvgUJGqj5qOHPbvgZyFEowI/Zp7nPe8Ar1GJUz5gSw8AAAAASUVORK5CYII="
+                  alt="arrow to right"
+                  width="90"
+                  height="24" />
+              </div>
+            </li>
+          </ul>
+
+          <div class="position-relative text-center mb-20 mb-md-24">
+            <img
+              class="circle"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACEBAMAAACjap6UAAAAIVBMVEVHcEz///////////////////////////////////////+PBM77AAAACnRSTlMAGTqG31zEpO9wPD7i/QAABFRJREFUeJztWc1TGjEUf1lc4LjiB8pptVpbTlhGUU5YER1O1q86nGh11HLCVp2OJx2nVj3ZwU4dbnxb/spudrMLbDeQbJzOdPR3gGyy+W3y3svLywtADyAQRuZWmGI3K8og1UpmcYivJ3pLCt7Db2bd6RIfxwX5D6v7Jmvljp1jWAU4IuUTuCclXwnizKL1RzRFKManGzNF1agdzIM3wUrh094MGR/0pXZvIkZtZhq8WVYKuQQvcsbboVXwJIzaVPJzfJWVAjXm6jFDl5pIpBLhlZPHwIzcJ0Wq6WTaL7rW6/qyMMxhqHOaLL9bTwVDFCp4ztgpwqpGY6s7/QE+DgqsVUzTDnnlOB5hp8AjDtgr5ZxpsRBQaT1RgShNKnf9wnCzqlCatq8qhEvtxiBdzUzVKMOvKPGufQleLRg6c8BXVZdjTyS17l7nF8MRWksHZCwo0+rtEymDuSq7wZelU8DBaAUYKPLaT1/euXHwimUR6GZOk7vUYGAAdIGVR2tl8weZaSmXpzV6z1ko5PTNNX2MKWDi2FTojePwNCGJU2wLM6BlYQrfglB3LAZtX7AGdMhP4a3vbC62MSZXgVe86PVsrj4/Zj0HG4oVDrAjFD1ptrzcxhKgRU4G0PQhqa1hnR56eMVr7yAn2WMHgrC9Q5DJY7XBwa7ecVKAC0t4xjP+HZAVCaDJ2J4rCilh9C8c3TRTHAF6+yjO9D+5Pr82C+4QKE9iV4fi07DjjiHTrKZUfRhJteaOol8xD6DBRglcwgppNpiCGyeYp1lAOY5TQgda+4inCsIIwn8M3q3HAQ3ebfhvTLCE/T1wz5nScIA/J7ynhcZX3FqliTBepGIUs4H1U6FhoPV083LGUKzsTr/Fhy9WSOFXXVFMtn25T9xSfW82BRliKw/7ghQ/1/MgCjkrTCElhCnQI/iOJw0k7rF8TWGPlRlKTwtSLMNAVcwY8KEoaMuycTowL472NjoOQj3yehRE2x/6xFdrRnh/5D+mdmJgbQznvkXgTTdvdjbHxEgCuycHTbHtEZW7ZXSZ8AgqLfKptN9hHpwqdUrkZfkoMqKBibZMfwtTQFx420Bp6uEB/TpmUs3IYZKa0q8fMaV0lmHkg3OLXFdoqfoOaHc/tFRzSKNmuZXSPByizGRXsW6XugJdKhPOE8GXS2w+NJOqUMdHbg2on1fJmzEVaFLS1myiC4Wn51kSXwZ1tbvesyzewgD9lLIFzku0c5yNQpqsQSmq2lv127SeVvPy4SMpxVNVe8rOn7cuOFmAGjCUVvWS0ibLUXLByQKsWsMZYmuVdXOTalNXMfYMAfboRjYSdyfOOVcfQxfMFLC1ShSIO5H7RDws9qTP8GX1fcIozkWjpB+Wpf12ko4jZchUbzi1R7IsWCxBZorlVrTgj8jnLRmzQ1v2piF6zsytDl3zUAwuBcwcESqHTdPg2/I2qgmzuHMC7jBlbdR34pHySEKYQu6xc/0BP6G5E3ghXA4AAAAASUVORK5CYII="
+              alt=""
+              width="132"
+              height="132" />
+            <p class="position-absolute top-50 start-50 translate-middle">
+              查看更多
+            </p>
+          </div>
+          <p class="card-text d-none d-md-block text-end mb-10">
+            為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料
+          </p>
+        </div>
+      </section>
+
+      <!-- share section -->
+      <section
+        class="share bg-radial-gradient-2 text-white fw-bold overflow-hidden position-relative pt-15 pb-14 pt-lg-40 pb-lg-10">
+        <p class="bg-logo font-shrikhand">ALPHABOX+</p>
+
+        <div class="container">
+          <div class="card bg-transparent text-white border-0 mb-6 mb-md-10">
+            <div class="row">
+              <div class="col-lg-5">
+                <h2
+                  class="card-title mfs-10 mfs-xl-12 ls-40 ls-md-48 mb-4 fw-bold">
+                  使用分享
+                </h2>
+                <p class="card-subtitle mt-0 mb-6 mb-lg-10">01 — 04</p>
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body p-0">
+                  <p class="card-text mt-lg-5 mt-xl-8">
+                    展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span
+            class="material-symbols-outlined mfs-20 align-middle mb-4 mb-md-6">
+            emergency
+          </span>
+          <div class="swiper overflow-visible mb-lg-31">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <!-- shareCard 1 -->
+                <div class="card shareCard bg-primary-dark-3 text-white">
+                  <div class="card-body d-flex flex-column p-6 p-md-10">
+                    <h3
+                      class="card-title d-flex align-items-center gap-2 fw-bold mfs-4 mb-8">
+                      <span>Zona</span>
+                      <span class="material-icons md-8"> circle </span>
+                      <span>Taipei</span>
+                    </h3>
+                    <p class="card-text">
+                      ALPHABOX+
+                      真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                    </p>
+                    <p
+                      class="card-text d-flex align-items-center gap-4 mt-auto">
+                      <span class="material-icons md-16"> circle </span
+                      ><span class="material-icons md-16"> circle </span>
+                      <span>ALPHABOX+ Dianne</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- shareCard 2 -->
+                <div class="card shareCard">
+                  <div class="card-body d-flex flex-column p-6 p-md-10">
+                    <h3
+                      class="card-title d-flex align-items-center gap-2 fw-bold mfs-4 mb-8">
+                      <span>Lin</span>
+                      <span class="material-icons md-8"> circle </span>
+                      <span>Chiayi</span>
+                    </h3>
+                    <p class="card-text">
+                      非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+                    </p>
+                    <p
+                      class="card-text d-flex align-items-center gap-4 mt-auto">
+                      <span class="material-icons md-16"> circle </span
+                      ><span class="material-icons md-16"> circle </span>
+                      <span>ALPHABOX+ Felix</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- shareCard 3 -->
+                <div class="card shareCard bg-primary-dark-3 text-white">
+                  <div class="card-body d-flex flex-column p-6 p-md-10">
+                    <h3
+                      class="card-title d-flex align-items-center gap-2 fw-bold mfs-4 mb-8">
+                      <span>云</span>
+                      <span class="material-icons md-8"> circle </span>
+                      <span>Taipei</span>
+                    </h3>
+                    <p class="card-text">
+                      我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見
+                      ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
+                    </p>
+                    <p
+                      class="card-text d-flex align-items-center gap-4 mt-auto">
+                      <span class="material-icons md-16"> circle </span
+                      ><span class="material-icons md-16"> circle </span>
+                      <span>ALPHABOX+ Dianne</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- shareCard 4 -->
+                <div class="card shareCard">
+                  <div class="card-body d-flex flex-column p-6 p-md-10">
+                    <h3
+                      class="card-title d-flex align-items-center gap-2 fw-bold mfs-4 mb-8">
+                      <span>Zichi</span>
+                      <span class="material-icons md-8"> circle </span>
+                      <span>Kaohsiung</span>
+                    </h3>
+                    <p class="card-text">
+                      讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+                    </p>
+                    <p
+                      class="card-text d-flex align-items-center gap-4 mt-auto">
+                      <span class="material-icons md-16"> circle </span
+                      ><span class="material-icons md-16"> circle </span>
+                      <span>ALPHABOX+ Vito</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row d-none d-lg-flex align-items-center mt-12">
+              <div class="col-8">
+                <!-- scrollbar -->
+                <div class="swiper-scrollbar position-static"></div>
+              </div>
+              <div class="col-1">SCROLL</div>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <p class="d-none d-lg-block">
+            若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。
+          </p>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section
+        class="contact bg-primary-dark-2 text-white fw-bold pt-12 pb-20 py-md-36">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card bg-primary-dark-2 text-white mb-6 border-0">
+                <h2 class="card-title text-white fw-bold ls-40 ls-md-48 mb-5">
+                  聯絡我們
+                </h2>
+                <p class="d-flex align-items-center mb-9 mb-mb-13">
+                  <span class="bg-white divider-circle me-2"></span>
+                  <span class="bg-white divider-pill"></span>
+                </p>
+                <p class="card-text mb-1">讓科技成為您的最佳夥伴</p>
+                <p class="card-text">立即體驗神奇功能並享限時優惠！</p>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <form action="">
+                <span
+                  class="material-symbols-outlined mfs-20 align-middle mb-4">
+                  emergency
+                </span>
+                <div class="form-floating mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com" />
+                  <label for="floatingInput">EMAIL</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 120px"></textarea>
+                  <label for="floatingTextarea2">COMMENTS</label>
+                </div>
+                <div class="row flex-md-row-reverse">
+                  <div class="col-md-7">
+                    <button
+                      type="button"
+                      class="btn nav-link bg-primary-dark-5 fw-medium d-flex justify-content-center py-2 rounded-1 w-100">
+                      <span class="material-symbols-outlined me-1">
+                        point_scan </span
+                      >送出
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI agent -->
+      <section class="aiagent">
+        <div class="container-fluid px-0">
+          <ol class="row list-unstyled g-0 mb-0">
+            <li class="col-6 col-lg-3">
+              <a href="#" class="card aiagentCard border-0">
+                <img
+                  class="card-img card-img-overlay h-100 object-fit-cover p-0 z-n1"
+                  src="/2023-layout-bootcamp-week8/assets/diane_vertical-5dfea2f2.png"
+                  alt="diane" />
+                <div
+                  class="d-flex flex-column align-items-center text-white py-6 px-3 px-md-10 pb-md-14">
+                  <p
+                    class="aiagentCard-number font-sairaextra fw-light mb-4 mb-lg-50">
+                    1
+                  </p>
+                  <h3
+                    class="card-title font-shrikhand mfs-6 mfs-lg-8 mb-md-20"
+                    style="margin-bottom: 18px">
+                    Diane
+                  </h3>
+                  <h4 class="card-subtitle align-self-start mfs-4 fw-bold mt-0">
+                    知識型
+                  </h4>
+                  <div
+                    class="card-text align-self-start d-lg-flex justify-content-lg-between w-100">
+                    <p>學術領導/知識分享/智能問答</p>
+                    <img
+                      style="max-width: 100%; max-height: 100%"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwBAMAAABKwk3PAAAAElBMVEVHcEz///////////////////+IGTx/AAAABXRSTlMAHVrZkk/IrqsAAACZSURBVHic7daxDYQwEAXR5Y4CkJBzE7gAkMghoAHg998KtoAGkCYA7RTwkrXXNvM874t1htVGo6q3hqJNOyVbUk/Rf2mG6J+0RcgepR0aZZA0MHSdaWiUVaE1IXYq9H1zBHSNkqCvUb6MRs72OcYIyNVY6AmQySsTsrwisi3YegKXKvgUJGqj5qOHPbvgZyFEowI/Zp7nPe8Ar1GJUz5gSw8AAAAASUVORK5CYII="
+                      alt="arrow to right"
+                      width="155"
+                      height="24" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-6 col-lg-3">
+              <a href="#" class="card aiagentCard border-0 border-start-lg">
+                <img
+                  class="card-img card-img-overlay h-100 object-fit-cover p-0 z-n1"
+                  src="/2023-layout-bootcamp-week8/assets/felix_vertical-c08ad350.png"
+                  alt="felix" />
+                <div
+                  class="d-flex flex-column align-items-center text-white py-6 px-3 px-md-10 pb-md-14">
+                  <p
+                    class="aiagentCard-number font-sairaextra fw-light mb-4 mb-lg-50">
+                    2
+                  </p>
+                  <h3
+                    class="card-title font-shrikhand mfs-6 mfs-lg-8 mb-md-20"
+                    style="margin-bottom: 18px">
+                    Felix
+                  </h3>
+                  <h4 class="card-subtitle align-self-start mfs-4 fw-bold mt-0">
+                    娛樂型
+                  </h4>
+                  <div
+                    class="card-text align-self-start d-lg-flex justify-content-lg-between w-100">
+                    <p>音樂播放/語音互動/遊戲陪伴</p>
+                    <img
+                      style="max-width: 100%; max-height: 100%"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwBAMAAABKwk3PAAAAElBMVEVHcEz///////////////////+IGTx/AAAABXRSTlMAHVrZkk/IrqsAAACZSURBVHic7daxDYQwEAXR5Y4CkJBzE7gAkMghoAHg998KtoAGkCYA7RTwkrXXNvM874t1htVGo6q3hqJNOyVbUk/Rf2mG6J+0RcgepR0aZZA0MHSdaWiUVaE1IXYq9H1zBHSNkqCvUb6MRs72OcYIyNVY6AmQySsTsrwisi3YegKXKvgUJGqj5qOHPbvgZyFEowI/Zp7nPe8Ar1GJUz5gSw8AAAAASUVORK5CYII="
+                      alt="arrow to right"
+                      width="155"
+                      height="24" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-6 col-lg-3">
+              <a href="#" class="card aiagentCard border-0 border-start-lg">
+                <img
+                  class="card-img card-img-overlay h-100 object-fit-cover p-0 z-n1"
+                  src="/2023-layout-bootcamp-week8/assets/karina_verticalgle-5c6a44c5.png"
+                  alt="karina" />
+                <div
+                  class="d-flex flex-column align-items-center text-white py-6 px-3 px-md-10 pb-md-14">
+                  <p
+                    class="aiagentCard-number font-sairaextra fw-light mb-4 mb-lg-50">
+                    3
+                  </p>
+                  <h3
+                    class="card-title font-shrikhand mfs-6 mfs-lg-8 mb-md-20"
+                    style="margin-bottom: 18px">
+                    Diane
+                  </h3>
+                  <h4 class="card-subtitle align-self-start mfs-4 fw-bold mt-0">
+                    生活型
+                  </h4>
+                  <div
+                    class="card-text align-self-start d-lg-flex justify-content-lg-between w-100">
+                    <p>健康提醒/日程安排/智能家居</p>
+                    <img
+                      style="max-width: 100%; max-height: 100%"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwBAMAAABKwk3PAAAAElBMVEVHcEz///////////////////+IGTx/AAAABXRSTlMAHVrZkk/IrqsAAACZSURBVHic7daxDYQwEAXR5Y4CkJBzE7gAkMghoAHg998KtoAGkCYA7RTwkrXXNvM874t1htVGo6q3hqJNOyVbUk/Rf2mG6J+0RcgepR0aZZA0MHSdaWiUVaE1IXYq9H1zBHSNkqCvUb6MRs72OcYIyNVY6AmQySsTsrwisi3YegKXKvgUJGqj5qOHPbvgZyFEowI/Zp7nPe8Ar1GJUz5gSw8AAAAASUVORK5CYII="
+                      alt="arrow to right"
+                      width="155"
+                      height="24" />
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="col-6 col-lg-3">
+              <a href="#" class="card aiagentCard border-0 border-start-lg">
+                <img
+                  class="card-img card-img-overlay h-100 object-fit-cover p-0 z-n1"
+                  src="/2023-layout-bootcamp-week8/assets/vito_vertical-cab1802c.png"
+                  alt="vito" />
+                <div
+                  class="d-flex flex-column align-items-center text-white py-6 px-3 px-md-10 pb-md-14">
+                  <p
+                    class="aiagentCard-number font-sairaextra fw-light mb-4 mb-lg-50">
+                    4
+                  </p>
+                  <h3
+                    class="card-title font-shrikhand mfs-6 mfs-lg-8 mb-md-20"
+                    style="margin-bottom: 18px">
+                    Vito
+                  </h3>
+                  <h4 class="card-subtitle align-self-start mfs-4 fw-bold mt-0">
+                    情感型
+                  </h4>
+                  <div
+                    class="card-text align-self-start d-lg-flex justify-content-lg-between w-100">
+                    <p>情感識別/心情分析/心靈支持</p>
+                    <img
+                      style="max-width: 100%; max-height: 100%"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAwBAMAAABKwk3PAAAAElBMVEVHcEz///////////////////+IGTx/AAAABXRSTlMAHVrZkk/IrqsAAACZSURBVHic7daxDYQwEAXR5Y4CkJBzE7gAkMghoAHg998KtoAGkCYA7RTwkrXXNvM874t1htVGo6q3hqJNOyVbUk/Rf2mG6J+0RcgepR0aZZA0MHSdaWiUVaE1IXYq9H1zBHSNkqCvUb6MRs72OcYIyNVY6AmQySsTsrwisi3YegKXKvgUJGqj5qOHPbvgZyFEowI/Zp7nPe8Ar1GJUz5gSw8AAAAASUVORK5CYII="
+                      alt="arrow to right"
+                      width="155"
+                      height="24" />
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+  <div
+    class="footer container d-lg-flex align-items-center justify-content-between text-black py-10 px-7 px-lg-0 py-lg-12">
+    <h2>
+      <a class="font-shrikhand d-block text-black mfs-8" href="#">ALPHABOX+</a>
+      <p class="fw-bold mfs-4 ls-1_6 d-none d-lg-block">
+        Copyright © 2023 Hexschool.
+      </p>
+    </h2>
+
+    <span class="material-symbols-outlined mfs-20 align-middle mb-2 mb-lg-0">
+      emergency
+    </span>
+
+    <ul class="nav flex-column flex-lg-row gap-2 gap-lg-6 mb-2">
+      <li class="nav-item">
+        <a class="nav-link text-black fw-bold p-0" href="#">關於我們</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black fw-bold p-0" href="#">產品資訊</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black fw-bold p-0" href="/pages/faq.html"
+          >常見問題</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black fw-bold p-0" href="#">隱私政策</a>
+      </li>
+    </ul>
+
+    <p class="fw-bold ls-1_6 d-lg-none">Copyright © 2023 Hexschool.</p>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
