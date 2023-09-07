@@ -1,0 +1,13 @@
+.swiper-scrollbar {
+  background: rgba(255, 255, 255, 0.2);
+  &-drag {
+    background-color: #fff;
+  }
+}
+
+.swiper {
+  pointer-events: none;
+  @include media-breakpoint-up(lg) {
+    pointer-events: initial;
+  }
+}

@@ -1,0 +1,133 @@
+.hero {
+  .card-title {
+    text-align-last: justify;
+  }
+
+  .card-subtitle {
+    position: relative;
+    letter-spacing: 1.6px;
+
+    @include media-breakpoint-up(xxxl) {
+      position: absolute;
+      top: 60px;
+      right: -220px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      height: 1px;
+      width: 100%;
+      background-color: white;
+      @include media-breakpoint-up(xxxl) {
+        top: -4px;
+        width: 416px;
+      }
+    }
+  }
+
+  .card-text {
+    letter-spacing: 4.8px;
+    @include media-breakpoint-up(lg) {
+      letter-spacing: 16px;
+    }
+  }
+
+  .news {
+    position: absolute;
+    top: -56px;
+    left: 0;
+    border-bottom: 1px solid $white;
+    @include media-breakpoint-up(xxxl) {
+      top: -128px;
+    }
+  }
+
+  .copyright {
+    position: absolute;
+    top: -56px;
+    right: 36px;
+    letter-spacing: 1.6px;
+    @include media-breakpoint-up(xxxl) {
+      right: 152px;
+      top: -128px;
+    }
+  }
+
+  &-body {
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-up(xxxl) {
+      transform: translateY(-72px);
+    }
+  }
+
+  &-item {
+    background-size: cover;
+    background-position: center top;
+    transition: 0.25s;
+
+    &:hover {
+      box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.8);
+    }
+  }
+
+  &-list:nth-child(1) > &-item {
+    background-image: url('/assets/images/diane_square1.png');
+    padding-bottom: calc(100% - 64px);
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/diane.png');
+      padding-bottom: calc(percentage(math.div(676, 416)) - 64px);
+    }
+  }
+
+  &-list:nth-child(2) > &-item {
+    background-image: url('/assets/images/felix_square1.png');
+    padding-bottom: calc(100% - 64px);
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/felix.png');
+      padding-bottom: calc(percentage(math.div(676, 416)) - 64px);
+    }
+
+    @include media-breakpoint-up(xxxl) {
+      padding-bottom: calc(percentage(math.div(580, 416)) - 64px);
+    }
+  }
+
+  &-list:nth-child(3) > &-item {
+    padding-bottom: calc(100% - 64px);
+    background-image: url('/assets/images/karina_square1.png');
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/karina.png');
+      padding-bottom: calc(percentage(math.div(676, 416)) - 64px);
+    }
+
+    @include media-breakpoint-up(xxxl) {
+      padding-bottom: calc(percentage(math.div(580, 416)) - 64px);
+    }
+  }
+
+  &-list:nth-child(4) > &-item {
+    padding-bottom: calc(100% - 64px);
+    background-image: url('/assets/images/vito_square1.png');
+
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/vito.png');
+      padding-bottom: calc(percentage(math.div(676, 416)) - 64px);
+    }
+  }
+}
+
+.bg-hero {
+  background-size: cover;
+  @include gradient-y($primary, $primary-dark-1);
+
+  @include media-breakpoint-up(md) {
+    background-image: url('/assets/images/home_background.png');
+  }
+}

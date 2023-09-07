@@ -1,0 +1,34 @@
+.accordion > *,
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: $primary-dark-2;
+  background-color: $primary-light-2;
+}
+
+.accordion-button {
+  &::after {
+    content: none;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  .addIcon {
+    display: block;
+  }
+
+  .removeIcon {
+    display: none;
+  }
+
+  &:not(.collapsed) {
+    .addIcon {
+      display: none;
+    }
+
+    .removeIcon {
+      display: block;
+    }
+  }
+}

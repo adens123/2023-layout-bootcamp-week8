@@ -1,0 +1,38 @@
+$font-size-base: 1rem;
+$utilities: map-merge(
+  $utilities,
+  (
+    'my-font-size': (
+      responsive: true,
+      property: font-size,
+      class: mfs,
+      values: (
+        4: $font-size-base * 1,
+        5: $font-size-base * 1.25,
+        6: $font-size-base * 1.5,
+        8: $font-size-base * 2,
+        10: $font-size-base * 2.5,
+        12: $font-size-base * 3,
+        16: $font-size-base * 4,
+        20: $font-size-base * 5,
+        24: $font-size-base * 6,
+      ),
+    ),
+    'border-width': (
+      responsive: true,
+      property: border-width,
+      class: border,
+      values: $border-widths,
+    ),
+    'border-start': (
+      responsive: true,
+      property: border-left,
+      class: border-start,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style)
+          var(--#{$prefix}border-color),
+        0: 0,
+      ),
+    ),
+  )
+);

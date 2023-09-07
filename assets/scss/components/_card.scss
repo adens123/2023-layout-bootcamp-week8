@@ -1,0 +1,27 @@
+.shareCard {
+  height: 351px;
+  @include media-breakpoint-up(lg) {
+    height: 416px;
+  }
+}
+
+.aiagentCard {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+
+  @include media-breakpoint-up(md) {
+    background-color: #000;
+  }
+
+  &:hover {
+    transform: none; // base有設a:hover會影響這裡的背景顏色，故個別取消translate效果
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &-number {
+    font-size: 128px;
+    @include media-breakpoint-up(md) {
+      font-size: 400px;
+    }
+  }
+}

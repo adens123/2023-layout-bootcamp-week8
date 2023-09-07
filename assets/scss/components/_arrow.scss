@@ -1,0 +1,18 @@
+.arrow {
+  width: 180px;
+  height: 48px;
+
+  &-start {
+    background-image: url(/assets/images/line_start_arrow.png);
+    &:hover {
+      background-image: url(/assets/images/line_start_arrow_hover.png);
+    }
+  }
+
+  &-end {
+    background-image: url(/assets/images/line_end_arrow.png);
+    &:hover {
+      background-image: url(/assets/images/line_end_arrow_hover.png);
+    }
+  }
+}

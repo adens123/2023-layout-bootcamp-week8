@@ -1,0 +1,103 @@
+// Color system
+// ------------------------
+$primary: #7000ff;
+$primary-dark-1: #11002d;
+$primary-dark-2: #1f0f39;
+$primary-dark-3: #380c7e;
+$primary-dark-4: #6d01f7;
+
+$primary-dark-5: #6e01f8;
+
+$primary-light-1: #ad93cf;
+$primary-light-2: #e9e2f3;
+
+$gray-dark: #4b4b4b;
+
+$indigo: #7000ff;
+
+// Options
+// ------------------------
+$enable-rounded: false;
+$enable-negative-margins: true;
+// $enable-important-utilities: false;
+
+// Spacing
+// ------------------------
+// 4的倍數
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
+  16: $spacer * 4,
+  19: $spacer * 4.75,
+  20: $spacer * 5,
+  24: $spacer * 6,
+  26: $spacer * 6.5,
+  30: $spacer * 7.5,
+  31: $spacer * 7.75,
+  34: $spacer * 8.5,
+  36: $spacer * 9,
+  40: $spacer * 10,
+  44: $spacer * 11,
+  48: $spacer * 12,
+);
+
+// Position
+// Body
+
+// link
+// ------------------------
+// $link-color: inherit;
+$link-decoration: none;
+$link-hover-color: $primary;
+
+// Paragraphs
+// ------------------------
+$paragraph-margin-bottom: 0;
+
+// Grid
+// ------------------------
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1884px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+// Components（元件）
+
+// Typography
+// ------------------------
+$font-family-sans-serif: 'Noto Sans TC', Shrikhand, cursive,
+  'Saira Extra Condensed', system-ui, -apple-system, 'Segoe UI', Roboto,
+  'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+// Navbar
+// -------------------------
+$navbar-light-color: #fff;

@@ -1,0 +1,155 @@
+// font-family
+// --------------------
+.font-shrikhand {
+  font-family: 'Shrikhand';
+}
+
+.font-sairaextra {
+  font-family: 'Saira Extra Condensed';
+}
+
+// font-color
+// ---------------------
+.primary-light-1 {
+  color: $primary-light-1;
+}
+
+.primary-dark-2 {
+  color: $primary-dark-2;
+}
+
+// font-weight
+// ----------------------
+.fw-md-900 {
+  @include media-breakpoint-up(md) {
+    font-weight: 900 !important;
+  }
+}
+
+// background
+// --------------------
+.bg-primary-dark-2 {
+  background-color: $primary-dark-2;
+}
+
+.bg-primary-dark-3 {
+  background-color: $primary-dark-3;
+}
+
+.bg-primary-dark-4 {
+  background-color: $primary-dark-4;
+}
+
+.bg-primary-dark-5 {
+  background-color: $primary-dark-5;
+}
+
+.bg-primary-light-2 {
+  background-color: $primary-light-2;
+}
+
+.bg-gradienty {
+  @include gradient-y($primary, $primary-dark-1);
+}
+
+.bg-radial-gradient-1 {
+  @include radial-gradient(#28085c, #000);
+}
+
+.bg-radial-gradient-2 {
+  @include radial-gradient(#000, #28085c);
+}
+
+.bg-logo {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.04);
+  font-size: 128px;
+  bottom: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  @include media-breakpoint-up(md) {
+    font-size: 400px;
+    bottom: -233px;
+  }
+}
+
+// material-icons size
+.material-icons {
+  &.md-8 {
+    font-size: 8px;
+  }
+  &.md-16 {
+    font-size: 16px;
+  }
+}
+
+// container
+.container-xxxl {
+  @include media-breakpoint-up(xxxl) {
+    max-width: 1784px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+// letter spacing
+.ls-1_6 {
+  letter-spacing: 1.6px;
+}
+
+.ls-16 {
+  letter-spacing: 16px;
+}
+
+.ls-20 {
+  letter-spacing: 20px;
+}
+
+.ls-24 {
+  letter-spacing: 24px;
+  & > span {
+    letter-spacing: -24px;
+  }
+}
+
+.ls-40 {
+  letter-spacing: 40px;
+}
+
+.ls-md-32 {
+  @include media-breakpoint-up(md) {
+    letter-spacing: 32px;
+    & > span {
+      letter-spacing: 0;
+    }
+  }
+}
+
+.ls-md-48 {
+  @include media-breakpoint-up(md) {
+    letter-spacing: 48px;
+    & > span {
+      letter-spacing: 0;
+    }
+  }
+}
+
+// borders
+.my-border-bottom {
+  border-bottom: 2px dotted #fff;
+}
+
+.my-border-md-none {
+  @include media-breakpoint-up(md) {
+    border: none;
+  }
+}
+
+// circle animation
+.circle {
+  animation: circle 6s linear infinite forwards;
+}
+
+// temp
+// -----------------------------

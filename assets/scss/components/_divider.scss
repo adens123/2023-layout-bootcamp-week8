@@ -1,0 +1,30 @@
+.divider {
+  height: 40px;
+
+  &-right {
+    @include gradient-x(90deg, $primary 1.22%, $primary-dark-1 116.05%);
+  }
+
+  &-left {
+    @include gradient-x(-90deg, $primary 1.22%, $primary-dark-1 116.05%);
+  }
+
+  &-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    @include media-breakpoint-up(md) {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &-pill {
+    width: 124px;
+    height: 8px;
+    border-radius: 10rem;
+    @include media-breakpoint-up(md) {
+      height: 12px;
+    }
+  }
+}

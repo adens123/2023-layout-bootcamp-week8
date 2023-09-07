@@ -1,0 +1,22 @@
+.subhero {
+  position: relative;
+  background: url('/assets/images/carousel_mobile.png') no-repeat left center /
+    100% 100%;
+
+  @include media-breakpoint-up(md) {
+    background: url('/assets/images/carousel_mobile.png') no-repeat left center /
+        50% 100%,
+      radial-gradient(50% 50% at 50% 50%, #300871 0%, #000 100%) right center /
+        100% 100%;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(12px);
+  }
+}

@@ -1,0 +1,12 @@
+.form-floating,
+.form-floating > .form-control {
+  color: $primary-dark-2;
+  font-weight: 700;
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+}
+
+.form-floating > .form-control {
+  padding: 8px 16px;
+}
