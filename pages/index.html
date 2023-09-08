@@ -43,39 +43,40 @@
               Copyright © 2023 Hexschool.
             </p>
           </div>
+          <!-- AI agent lists -->
           <ul
             class="hero-body list-unstyled row align-items-end g-4 g-md-8 mb-0">
             <li class="hero-list col-md-6 col-xxl-3">
-              <div class="hero-item">
+              <a href="#" class="hero-item d-block">
                 <h3
                   class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
                   Diane
                 </h3>
-              </div>
+              </a>
             </li>
             <li class="hero-list col-md-6 col-xxl-3">
-              <div class="hero-item">
+              <a href="#" class="hero-item d-block">
                 <h3
                   class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
                   Felix
                 </h3>
-              </div>
+              </a>
             </li>
             <li class="hero-list col-md-6 col-xxl-3">
-              <div class="hero-item">
+              <a href="#" class="hero-item d-block">
                 <h3
                   class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
                   Karina
                 </h3>
-              </div>
+              </a>
             </li>
             <li class="hero-list col-md-6 col-xxl-3">
-              <div class="hero-item">
+              <a href="#" class="hero-item d-block">
                 <h3
                   class="text-white font-shrikhand mfs-8 text-center pt-4 m-0">
                   Vito
                 </h3>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -182,7 +183,7 @@
             <li class="col-md-6">
               <!-- card 2 -->
               <div
-                class="card bg-transparent text-white border-white border-start-0 border-end-0 py-8 px-4 py-md-10">
+                class="card h-100 bg-transparent text-white border-white border-start-0 border-end-0 py-8 px-4 py-md-10">
                 <div class="d-flex align-items-center mb-2">
                   <span class="material-symbols-outlined me-4">
                     emergency
@@ -192,7 +193,7 @@
                 <h3 class="card-title mfs-5 fw-bold ls-20 mb-3">
                   限時優惠活動
                 </h3>
-                <p class="card-text mb-3">
+                <p class="card-text mb-3 mb-md-auto">
                   為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱
                   ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！
                 </p>
@@ -206,7 +207,7 @@
             <li class="col-md-6">
               <!-- card 3 -->
               <div
-                class="card bg-transparent text-white border-white border-end-0 border-start-0 border-start-md py-8 px-4 py-md-10">
+                class="card h-100 bg-transparent text-white border-white border-end-0 border-start-0 border-start-md py-8 px-4 py-md-10">
                 <div class="d-flex align-items-center mb-2">
                   <span class="material-symbols-outlined me-4">
                     emergency
@@ -214,7 +215,7 @@
                   <time class="ls-16" datetime="2023-04-18">2023.04.18</time>
                 </div>
                 <h3 class="card-title mfs-5 fw-bold ls-20 mb-3">新功能上線</h3>
-                <p class="card-text mb-3">
+                <p class="card-text mb-3 mb-md-auto">
                   為使您的 ALPHABOX+
                   更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
                 </p>
@@ -234,9 +235,11 @@
               alt=""
               width="132"
               height="132" />
-            <p class="position-absolute top-50 start-50 translate-middle">
+            <a
+              href="#"
+              class="position-absolute text-white top-50 start-50 translate-middle">
               查看更多
-            </p>
+            </a>
           </div>
           <p class="card-text d-none d-md-block text-end mb-10">
             為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料
@@ -401,7 +404,7 @@
               </div>
             </div>
             <div class="col-md-7">
-              <form action="">
+              <form class="needs-validation" novalidate>
                 <span
                   class="material-symbols-outlined mfs-20 align-middle mb-4">
                   emergency
@@ -411,21 +414,24 @@
                     type="email"
                     class="form-control"
                     id="floatingInput"
-                    placeholder="name@example.com" />
+                    placeholder=""
+                    required />
+                  <div class="valid-feedback">請輸入Email</div>
                   <label for="floatingInput">EMAIL</label>
                 </div>
                 <div class="form-floating mb-4">
                   <textarea
                     class="form-control"
-                    placeholder="Leave a comment here"
+                    placeholder=""
                     id="floatingTextarea2"
-                    style="height: 120px"></textarea>
+                    style="height: 120px"
+                    required></textarea>
                   <label for="floatingTextarea2">COMMENTS</label>
                 </div>
                 <div class="row flex-md-row-reverse">
                   <div class="col-md-7">
                     <button
-                      type="button"
+                      type="submit"
                       class="btn nav-link bg-primary-dark-5 fw-medium d-flex justify-content-center py-2 rounded-1 w-100">
                       <span class="material-symbols-outlined me-1">
                         point_scan </span
